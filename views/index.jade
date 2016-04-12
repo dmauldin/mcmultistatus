@@ -1,0 +1,18 @@
+html
+  head
+    title Wheee.org Minecraft Server Status
+  body
+    table
+      tr
+        th port
+        th name
+        th players
+        th version
+        th debug
+      - for server in servers
+        tr
+          td= server.port
+          td= server.info.description
+          td= server.info.players.online
+          td= server.info.version.name
+          td= JSON.stringify(server.info)

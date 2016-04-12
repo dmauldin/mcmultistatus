@@ -11,6 +11,8 @@
   "dependencies": {
     "async": "^2.0.0-rc.3",
     "express": "^4.13.4",
-    "mc-ping-updated": "^0.1.0"
+    "jade": "^1.11.0",
+    "mc-ping-updated": "^0.1.0",
+    "underscore": "^1.8.3"
   }
 }
