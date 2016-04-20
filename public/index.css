@@ -1,0 +1,7 @@
+body { font-family: 'arial narrow', sans-serif; }
+img.player { vertical-align: middle; margin-right: 10px; }
+span.name { vertical-align: middle; }
+table { border-spacing: 10px; }
+tr.server { border-top: 1px solid #555; }
+tr.server:first-child { border-top: none; }
+

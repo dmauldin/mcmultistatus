@@ -1,6 +1,7 @@
 html
   head
     title Wheee.org Minecraft Server Status
+    link(rel="stylesheet", href="/public/index.css", type="text/css")
   body
     table
       tr
@@ -8,11 +9,18 @@ html
         th name
         th players
         th version
-        th debug
       - for server in servers
-        tr
+        tr.server
           td= server.port
           td= server.info.description
           td= server.info.players.online
           td= server.info.version.name
-          td= JSON.stringify(server.info)
+        if server.info.players.sample && server.info.players.sample.constructor === Array
+          - for player in server.info.players.sample
+            tr
+              td
+              td
+              td
+                img.player(src="https://crafatar.com/avatars/"+player.id+"?size=32")
+                span.name= player.name
+
