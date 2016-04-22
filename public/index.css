@@ -1,7 +1,17 @@
-body { font-family: 'arial narrow', sans-serif; }
+@font-face {
+  font-family: 'Minecraft';
+  src: url('fonts/mcfont.eot');
+  src: url('fonts/mcfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/mcfont.woff') format('woff'),
+       url('fonts/mcfont.ttf')  format('truetype'),
+       url('fonts/mcfont.svg#svgFontName') format('svg');
+}
+
+body { font-size: 17px; font-family: 'Minecraft', sans-serif; background-color: #333; color: #DDD; }
 img.player { vertical-align: middle; margin-right: 10px; }
 span.name { vertical-align: middle; }
-table { border-spacing: 10px; }
+table { border-spacing: 5px; }
 tr.server { border-top: 1px solid #555; }
 tr.server:first-child { border-top: none; }
+td { font-size: 17px; padding-right: 10px; }
 
