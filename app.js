@@ -22,7 +22,6 @@ app.get('/', function(req, res) {
                     res.description = res.description.text;
                 }
                 res.description = res.description.replace(/§.{1}/g, '');
-                res.modinfo = undefined;
                 serverResponses.push({port: port, info: res});
                 callback();
             }

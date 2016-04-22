@@ -9,12 +9,14 @@ html
         th name
         th players
         th version
+        th mods
       - for server in servers
         tr.server
           td= server.port
           td= server.info.description
           td= server.info.players.online
           td= server.info.version.name
+          td= server.info.modinfo.modList.length
         if server.info.players.sample && server.info.players.sample.constructor === Array
           - for player in server.info.players.sample
             tr
