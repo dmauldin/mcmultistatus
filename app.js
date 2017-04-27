@@ -26,7 +26,7 @@ app.use(morgan('dev'));
 
 
 app.get('/', function(req, res) {
-    var ports = _.range(25565, 25580); // 25565 to 25569
+    var ports = _.range(25561, 25580);
     var address = 'wheee.org';
     var servers = _.map(ports, function(port) { return address + ':' + port; });
     var serverResponses = [];
